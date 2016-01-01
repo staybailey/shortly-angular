@@ -3,6 +3,7 @@ angular.module('shortly.services', [])
 .factory('Links', function ($http) {
   // Your code here
   var addOne = function (link) {
+    console.log(link);
     return $http({
       method: 'POST',
       url: '/api/links',
