@@ -1,11 +1,11 @@
 var Link = require('./linkModel.js');
-    Q = require('q');
-    util = require('../config/utils.js');
+var Q = require('q');
+var util = require('../config/utils.js');
 
 
-var findLink = Q.denodify(Link.findOne, Link);
-var createLink = Q.denodify(Link.create, Link);
-var findAllLinks = Q.denodify(Link.find, Link);
+var findLink = Q.denodeify(Link.findOne, Link);
+var createLink = Q.denodeify(Link.create, Link);
+var findAllLinks = Q.denodeify(Link.find, Link);
 
 module.exports = {
 
