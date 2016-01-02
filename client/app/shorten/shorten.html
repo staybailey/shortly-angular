@@ -1,16 +1,9 @@
 <div id='container' >
 <!-- Your code here -->
-  <div class="navigation">
-    <ul>
-      <li><a href="/#/links">All Links</a></li>
-      <li><a href="/#/shorten">Shorten</a></li>
-    </ul>
-  </div>
+  <navbar></navbar>
   <form name="urlForm" ng-submit="addLink()">
     <input type='url' name="urlInput" ng-model="url" class="urlField"></input>
     <button type='submit'>Submit</button>
     <p ng-show="!(urlForm.urlInput.$valid)" class='invalidInput'>Please enter a valid URL.</p>
   </form>
 </div>
-
-

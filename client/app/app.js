@@ -4,7 +4,12 @@ angular.module('shortly', [
   'shortly.shorten',
   'shortly.auth',
   'ngRoute'
-])
+]).directive('navbar', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'app/templates/navBar.html'
+  };
+})
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
     .when('/signin', {
