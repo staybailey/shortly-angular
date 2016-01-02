@@ -1,6 +1,11 @@
 <div id='container'>
   <!-- Your html here -->
-  <p>This is the links page</p>
+  <div class="navigation">
+    <ul>
+      <li><a href="/#/links">All Links</a></li>
+      <li><a href="/#/shorten">Shorten</a></li>
+    </ul>
+  </div>
   <a ng-href="{{ link.base_url + '/' + link.code }}" ng-repeat="link in data.links">
     <div class="link">
       <img src="/assets/redirect_icon.png" />

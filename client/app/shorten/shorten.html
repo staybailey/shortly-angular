@@ -1,9 +1,15 @@
 <div id='container' >
 <!-- Your code here -->
-<form ng-submit="addLink()">
-  <input type='field' ng-model="url"></input>
-  <button type='submit'>Submit</button>
-</form>
+  <div class="navigation">
+    <ul>
+      <li><a href="/#/links">All Links</a></li>
+      <li><a href="/#/shorten">Shorten</a></li>
+    </ul>
+  </div>
+  <form ng-submit="addLink()">
+    <input type='field' ng-model="url"></input>
+    <button type='submit'>Submit</button>
+  </form>
 </div>
 
 
