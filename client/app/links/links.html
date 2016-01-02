@@ -6,7 +6,10 @@
       <li><a href="/#/shorten">Shorten</a></li>
     </ul>
   </div>
-  <a ng-href="{{ link.base_url + '/' + link.code }}" ng-repeat="link in data.links">
+  <div>
+    <input type='text' placeholder="search" ng-model="searchTerm"></input>
+  </div>
+  <a ng-href="{{ link.base_url + '/' + link.code }}" ng-repeat="link in data.links | filter:searchTerm | orderBy:'-visits'">
     <div class="link">
       <img src="/assets/redirect_icon.png" />
       <div class="visits">

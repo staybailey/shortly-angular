@@ -113,6 +113,17 @@ input[type=url]:focus {
   outline: none;
 }
 
+input.ng-dirty.ng-invalid {
+  outline: 1px solid red;
+}
+
+input.ng-dirty.ng-valid {
+  outline: 1px solid green;
+}
+
+.invalidInput {
+  color: red;
+}
 
 .error {
   border: red solid 4px;
