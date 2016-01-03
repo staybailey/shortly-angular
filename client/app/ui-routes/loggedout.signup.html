@@ -1,0 +1,10 @@
+<div id='signup'>
+  <h1>signup</h1>
+  <form name="signupForm" ng-submit='signup()'>
+    <input type='text' placeholder="username" name="signupFormUser" ng-pattern=/^\s*\w*\s*$/ ng-model='user.username'><span ng-show="!(signupForm.signupFormUser.$valid)" class="invalidInput">Invalid username.</span>
+    <input type="password" placeholder="password" ng-model='user.password'>
+    <button>signup</button>
+    <div ng-show="failed" class="invalidInput">Username already exists.</div>
+  </form>
+  <a href="#/signin">Already have an account? <strong>Signin</strong> ...</a>
+</div>

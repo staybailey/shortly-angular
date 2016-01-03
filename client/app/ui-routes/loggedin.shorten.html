@@ -1,0 +1,5 @@
+<form name="urlForm" ng-submit="addLink()">
+  <input type='url' name="urlInput" ng-model="url" class="urlField"></input>
+  <button type='submit'>Submit</button>
+  <p ng-show="!(urlForm.urlInput.$valid)" class='invalidInput'>Please enter a valid URL.</p>
+</form>

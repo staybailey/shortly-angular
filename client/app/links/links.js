@@ -4,5 +4,4 @@ angular.module('shortly.links', [])
   // Your code here
   $scope.data = {};
   $scope.data.links = links;
-
 });
